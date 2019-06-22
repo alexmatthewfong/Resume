@@ -8,7 +8,6 @@
 %
 % Original author:
 % Trey Hunner (http://www.treyhunner.com/)
-% 
 % Modified by:
 % Kyle Gillaspy - 5/12/2019
 %
@@ -25,8 +24,9 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage[sfdefault]{universalis}
-\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.7in,top=0.4in,right=0.7in,bottom=0.4in]{geometry} % Document margins
 \usepackage{fontawesome}
 \usepackage[dvipsnames]{xcolor}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
@@ -38,30 +38,30 @@
 %\address{www.linkedin.com/in/kylegillaspy}
 
 \begin{document}
-
+%{\fontfamily{lmss}\selectfont
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\color{NavyBlue}\faUniversity{ }}{Education}
+\begin{rSection}{\faUniversity{ }}{Education}
 
 \begin{rSubsection}{}
 {\bf University of California, San Diego} {\em September 2017 - \bf{June 2021}} 
-{B.S. Computer Science, Business Minor} { Overall GPA: \bf{3.5}/4.0}
-\\ \textbf{Business Courses:}
-\\Financial \& Managerial Accounting, Managing Teams, Econometrics, Project Management, Business Analytics
-\\ \textbf{ACT: 36} | English-35 Math-36 Reading-36 Science-36 Essay-12/12
+{B.S. Computer Science, Business Minor | Regent Scholar} { Overall GPA: \bf{3.5}}
+%\\ \textbf{Business Courses:}
+%\\Financial \& Managerial Accounting, Managing Diverse Teams, Project Management, Financial Analysis
+%\\ \textbf{ACT: 36} | English-35 Math-36 Reading-36 Science-36 Essay-12/12
 \end{rSubsection}
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\color{NavyBlue}\faLaptop{ }}{Skills}
+\begin{rSection}{\faLaptop{ }}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages &  Java, Python, C, Assembly (ARM), Bash, HTML/CSS \\
-Software \& Tools & UNIX, Git, Vim, pandas, numpy, Tabula, GDB, Unit testing, LaTeX,
+Languages &  Java, Python, C, C++, HTML, CSS, ARM assembly \\
+Software \& Tools & UNIX, Git, pandas, numpy, nltk, Stocker, seaborn, LaTeX, scrum agile framework
 \end{tabular}
 
 \end{rSection}
@@ -70,14 +70,22 @@ Software \& Tools & UNIX, Git, Vim, pandas, numpy, Tabula, GDB, Unit testing, La
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\color{NavyBlue}\faCode{ }}{Experience}
+\begin{rSection}{\faCode{ }}{Experience}
 
-\begin{rSubsection}{}{Oracle}{June 2019 - September 2019}{Incoming Technical Product Manager Intern}{Redwood Shores, CA}
-\item Will be on the NetSuite Enterprise Resource Planning (ERP) team to manage software development of ERP application for small to mid-sized companies
+\begin{rSubsection}{}{Oracle Corporation - NetSuite ERP Financials Team}{June 2019 - Present}{Technical Product Manager Intern}{Redwood Shores, CA}
+\item Managing ERP software development for 2019.2 release, leveraging financial and technical expertise
+\item Developing features to improve UI/UX and performance for NetSuite customers
+\item Communicating complex technical ideas across globally distributed teams
 
 \end{rSubsection}
 
-\begin{rSubsection}{}{REPS \& Company}{September 2018 - November 2018}{Market Analyst Intern}{La Jolla, CA}
+\begin{rSubsection}{}{TESC (Triton Engineering Student Council) }{May 2019 - Present}{Financial Analyst}{La Jolla, CA}
+\item Restructuring the organization funding process to better tailor to organizational need
+\item Budgeting and compliance for all financial matters in TESC, a registered 501(c)
+\item Analyzing past years' financial data to anticipate spending by over 60 organizations
+\end{rSubsection}
+
+\begin{rSubsection}{}{REPS \& Company}{September 2018 - November 2018}{Market Analyst Intern}{San Diego, CA}
 \item Implemented data analysis to manage an individual portfolio with >13\% returns
 \item Facilitated ticket brokerage and performed market analysis for pricing and purchasing stock in live events
 \end{rSubsection}
@@ -87,7 +95,7 @@ Software \& Tools & UNIX, Git, Vim, pandas, numpy, Tabula, GDB, Unit testing, La
 
 \begin{rSubsection}{}{Aerojet Rocketdyne}{June 2018 - September 2018}{Business Intern and Aerojet Rocketdyne Scholar}{Sacramento, CA}
 \item Tracked reconciliations and journal entries, prepared audits, tested SOx controls
-\item Prepared Excel spreadsheets with respect to SAB 99, ASC 606, COSO and COBIT
+\item Prepared Excel spreadsheets with for SAB 99 memo, ASC 606 restatements, COSO and COBIT audits
 \end{rSubsection}
 
 \end{rSection}
@@ -96,16 +104,14 @@ Software \& Tools & UNIX, Git, Vim, pandas, numpy, Tabula, GDB, Unit testing, La
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\color{NavyBlue}\faTrophy{ }}{Achievements} \begin{rSubsection}{}{Jacobs School of Engineering Scholarship}{}{}{}
+\begin{rSection}{\faTrophy{ }}{Achievements} \begin{rSubsection}{}{Jacobs School of Engineering Scholarship}{}{}{}
 \item A prestigious full-tuition scholarship sponsored by Irwin Jacobs, Qualcomm Co-Founder, that is awarded to approximately 10 engineering students per year based on academic and leadership qualities at UCSD 
-
+\iffalse
 \begin{rSubsection}{}{Regent Scholar}{}{}{}
 \item A prestigious UC system-wide scholarship awarded to students for academic excellence
 \end{rSubsection}
-
+\fi
 \end{rSubsection}
-
-
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -115,31 +121,32 @@ Software \& Tools & UNIX, Git, Vim, pandas, numpy, Tabula, GDB, Unit testing, La
 \\ \itab{Data Structures \& OO Design} \tab{}  \tab{Financial \& Managerial Accounting} 
 \\ \itab{Udemy coursework in HTML/CSS for Web Design} \tab{} \tab{Udemy coursework in Python for Financial Analysis}
 %\ \itab{Financial \& Managerial Accounting} \tab{}  \tab{Management of Diverse Teams}
-
 \end{rSection}
 \fi
 %--------------------------------------
 
 
-\begin{rSection}{\color{NavyBlue}\faDatabase{ }}{Projects} 
+\begin{rSection}{\faDatabase{ }}{Projects} 
 
-\begin{rSubsection}{}{Financial Analysis for Personal Portfolio}{Ongoing}{}{}
-\item Uses pandas and numpy Python libraries to analyze stocks by pulling market data from Quandl API to graph and calculate RoR, Risk, etc. to make decisions for options trading
+\begin{rSubsection}{}{3Stock -- Financial Analysis for Personal Portfolio}{Ongoing}{}{}
+\item Uses pandas and numpy Python libraries to analyze stocks by pulling market data from Quandl's API to make decisions for options trading
 \end{rSubsection}
-\begin{rSubsection}{}{FireCode Compliant}{Ongoing}{}{}
-\item In a team of 6, analyzed data using pandas, numpy, scipy, and sklearn libraries to better allocate firefighting resources in California. Dataset formed merging Tabula data scraped from PDF and SQL database on Kaggle
+\begin{rSubsection}{}{FireCode Compliant -- Data Analysis }{Ongoing}{}{}
+\item In a team of 6, analyzed data using pandas, numpy, seaborn, and sklearn libraries to better allocate firefighting resources in California
 
 \end{rSubsection}
 \end{rSection}
 
 
-\begin{rSection}{\color{NavyBlue}\faUsers{ }}{Professional Development and Involvement} 
+\begin{rSection}{\faUsers{ }}{Professional Development and Involvement} 
 
-Treasurer and Board Member of Theta Tau, E$\Delta$ Chapter -- Professional Engineering Fraternity
-\\Board Member and Treasurer of Jacobs School Scholars' Society 
-\\Committee Member of UIS, Undergraduate Investment Society
-\\Member of Scholars Society
-\\ \bf{Interests: }Game Theory, Poker, Writing, Product Management, Hiking (CA, CO, HI), UEFA Football
+Executive Board Member and Treasurer -- Theta Tau, E$\Delta$ Chapter (Professional Engineering Fraternity)
+\\Board Member -- Jacobs School Scholars' Society 
+\\Board Member and Financial Analyst -- TESC
+\\Committee Member -- UIS, Undergraduate Investment Society
+\\ AVID Peer Tutor for first-generation college-bound juniors
+%\\Member of Scholars Society
+\\ \textbf{Interests: }Game Theory, Poker, Creative writing, interpersonal dynamics, Hiking (CA, CO, HI), UEFA Football
 \end{rSection}
 % EXTRA STUFF
 
