@@ -16,7 +16,6 @@
 %
 % Created by Trey Hunner and modified by www.LaTeXTemplates.com
 %
-% Modified to include smaller spacing, sections, colors, and icons by Kyle Gillaspy
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
@@ -27,7 +26,7 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage[dvipsnames]{xcolor}
-
+\usepackage{xcolor}
 \pagestyle{empty} % Suppress page numbers
 
 %----------------------------------------------------------------------------------------
@@ -81,7 +80,7 @@
 \let\ori@document=\document
 \renewcommand{\document}{
   \ori@document  % Begin document
-  \color{NavyBlue}
+  %\color{RoyalBlue}
   \printname % Print the name specified with \name
   \color{black}
   \@ifundefined{@addressone}{}{ % Print the first address if specified
@@ -97,7 +96,7 @@
 %----------------------------------------------------------------------------------------
 
 % Defines the rSection environment for the large sections within the CV
-\color{MidnightBlue}
+%\color{MidnightBlue}
 \newenvironment{rSection}[2]{ % 1 input argument - section name
   \sectionskip
   {#1}
@@ -106,7 +105,7 @@
   \color{MidnightBlue}
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{.5em} % Margin within the section
+    \setlength{\leftmargin}{.4em} % Margin within the section
   }
   \color{Black}
   \item[]
@@ -125,15 +124,15 @@
   {\em #4} \hfill {\em #5} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -.6em \vspace{-0.75em} % Compress items in list together for aesthetics
+   \itemsep -.7em \vspace{-0.75em} % Compress items in list together for aesthetics
   }{
   \end{list}
  
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
-\def\namesize{\huge} % Size of the name at the top of the document
+\def\namesize{\Huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
-\def\nameskip{\medskip} % The space after your name at the top
+\def\nameskip{\smallskip} % The space after your name at the top
 \def\sectionskip{\smallskip} % The space after the heading section
