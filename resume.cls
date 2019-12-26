@@ -14,7 +14,7 @@
 % notice and this notice are preserved. This file is offered as-is,
 % without any warranty.
 %
-% Created by Trey Hunner and modified by www.LaTeXTemplates.com
+% Created by Trey Hunner and modified by kylegillaspy.com
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -102,7 +102,7 @@
   {#1}
   \MakeUppercase{\bf #2} % Section title
   \sectionlineskip
-  \color{MidnightBlue}
+  \color{RoyalBlue}
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{.4em} % Margin within the section
@@ -124,7 +124,7 @@
   {\em #4} \hfill {\em #5} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -.7em \vspace{-0.75em} % Compress items in list together for aesthetics
+   \itemsep -.8em \vspace{-0.75em} % Compress items in list together for aesthetics
   }{
   \end{list}
  
