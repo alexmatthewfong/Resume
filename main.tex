@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
+% One Page Resume - College SWE/PM Template
 % LaTeX Template
 % Version 2.0 (8/5/13)
 %
@@ -8,13 +8,28 @@
 %
 % Original author:
 % Trey Hunner (http://www.treyhunner.com/)
-% Modified by:
-% Kyle Gillaspy - 5/12/2019
+
+% Heavily Modified by:
+% Kyle Gillaspy - 12/26/2019
+% kylegillaspy.com
+%
+% ********************README****************
+% Using FontAwesome LaTeX icons: usage 
+%    \faIcon
+% Search for your icon, then use the slash command
+% To comment out sections to help easily tailor resumes
+% use the following slash command:
+%    \iffalse
+%     ***content to be commented out***
+%    \fi
+%
+%
+% ^^^^^^^^^^^^^^^^^^^^^^README^^^^^^^^^^^^^^^
+%
 %
 % Important note:
 % This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
+% .tex file. The resume.cls file provides the resume style used for %structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -23,22 +38,24 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
+% Define font packages to be used
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage[sfdefault]{universalis}
-\usepackage[left=0.7in,top=0.4in,right=0.7in,bottom=0.4in]{geometry} % Document margins
+% Define margins
+\usepackage[left=0.7in,top=0.25in,right=0.7in,bottom=0.2in]{geometry}
+% import package for icons from fontawesome
 \usepackage{fontawesome}
+% import xcolor package for line break accents
 \usepackage[dvipsnames]{xcolor}
+% define tab and itab command widths
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Kyle Gillaspy} % Your name
-\address{ \faHome{ San Diego, CA} \faPhone{  (530)~391-4467 }  \faLinkedin{  kylegillaspy }  \faEnvelope{  kyle.gillaspy@gmail.com } \faGithub{  kgillasp }} % Your address
+\address{ \faChrome{ kylegillaspy.com} \faPhone{  (530)~391-4467 }  \faLinkedin{  kylegillaspy }  \faEnvelope{  kyle.gillaspy@gmail.com } \faGithub{  kgillasp }} % Your social media
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
- % Your phone number and email
-%\address{www.linkedin.com/in/kylegillaspy}
 
 \begin{document}
-%{\fontfamily{lmss}\selectfont
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -47,23 +64,11 @@
 
 \begin{rSubsection}{}
 {\bf University of California, San Diego} {\em September 2017 - \bf{June 2021}} 
-{B.S. Computer Science, Business Minor | Regent Scholar} { Overall GPA: \bf{3.5}}
-%\\ \textbf{Business Courses:}
-%\\Financial \& Managerial Accounting, Managing Diverse Teams, Project Management, Financial Analysis
+{B.S. Computer Science, Business Minor | Jacobs Scholar, Regent Scholar} { Overall GPA: \bf{3.5}}
+\\ \textbf{Business Courses:}
+\\Project Management, Design for Development, Managing Diverse Teams, Financial \& Managerial Accounting
 %\\ \textbf{ACT: 36} | English-35 Math-36 Reading-36 Science-36 Essay-12/12
 \end{rSubsection}
-\end{rSection}
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{\faLaptop{ }}{Skills}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages &  Java, Python, C, C++, HTML, CSS, ARM assembly \\
-Software \& Tools & UNIX, Git, pandas, numpy, nltk, Stocker, seaborn, LaTeX, scrum agile framework
-\end{tabular}
-
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -72,46 +77,42 @@ Software \& Tools & UNIX, Git, pandas, numpy, nltk, Stocker, seaborn, LaTeX, scr
 
 \begin{rSection}{\faCode{ }}{Experience}
 
-\begin{rSubsection}{}{Oracle Corporation - NetSuite ERP Financials Team}{June 2019 - Present}{Technical Product Manager Intern}{Redwood Shores, CA}
-\item Managing ERP software development for 2019.2 release, leveraging financial and technical expertise
-\item Developing features to improve UI/UX and performance for NetSuite customers
-\item Communicating complex technical ideas across globally distributed teams
-
+\begin{rSubsection}{}{Oracle - Enterprise Resource Planning Team}{June 2020}{Incoming Product Manager Intern}{Redwood Shores, CA}
+\item Solely driving the ideation and development of a feature
 \end{rSubsection}
 
-\begin{rSubsection}{}{TESC (Triton Engineering Student Council) }{May 2019 - Present}{Financial Analyst}{La Jolla, CA}
-\item Restructuring the organization funding process to better tailor to organizational need
-\item Budgeting and compliance for all financial matters in TESC, a registered 501(c)
-\item Analyzing past years' financial data to anticipate spending by over 60 organizations
+\begin{rSubsection}{}{Oracle - NetSuite Financials Team}{June 2019 - September 2019}{Technical Product Manager Intern}{Redwood Shores, CA}
+\item Developing requirements and stories for FX Rates and Revenue Recognition features, end-to-end feature delivery
+\item Improving sustainability by creating documentation on Confluence and Jira and by developing internal QA tools 
+\item Piloting on-site research activities to gain insight into complex financial procedures and workflows
+\item Contributed to new processes for Change Control Management and Scheduling
 \end{rSubsection}
+
+\begin{rSubsection}{}{TESC (Triton Engineering Student Council) }{May 2019 - Present}{VP Finance and Board Member}{La Jolla, CA}
+\item Managing a finance team to establish and maintain standardized financial processes
+\item Budgeting, compliance, and logistics for all financial matters in TESC, a registered 501(c) in charge of SDHacks
+\item Analyzing past years' financial data to better align budgets and manage liquidity
+\end{rSubsection}
+
+\iffalse
+\begin{rSubsection}{}{University of California, San Diego}{June 2019 - Present}{Research Assistant}{La Jolla, CA}
+\item Wrangling data using Tabula and cleaning data using pandas Python library
+\item Assisting graduate student Alyssa Brown to publish a thesis focusing on the impact of school lunch programs
+\end{rSubsection}
+
 
 \begin{rSubsection}{}{REPS \& Company}{September 2018 - November 2018}{Market Analyst Intern}{San Diego, CA}
 \item Implemented data analysis to manage an individual portfolio with >13\% returns
 \item Facilitated ticket brokerage and performed market analysis for pricing and purchasing stock in live events
 \end{rSubsection}
+\fi
 
-
-%------------------------------------------------
 
 \begin{rSubsection}{}{Aerojet Rocketdyne}{June 2018 - September 2018}{Business Intern and Aerojet Rocketdyne Scholar}{Sacramento, CA}
 \item Tracked reconciliations and journal entries, prepared audits, tested SOx controls
-\item Prepared Excel spreadsheets with for SAB 99 memo, ASC 606 restatements, COSO and COBIT audits
+\item Prepared Excel spreadsheets for SAB 99 memo, ASC 606 restatements, COSO and COBIT audits
 \end{rSubsection}
 
-\end{rSection}
-
-
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{\faTrophy{ }}{Achievements} \begin{rSubsection}{}{Jacobs School of Engineering Scholarship}{}{}{}
-\item A prestigious full-tuition scholarship sponsored by Irwin Jacobs, Qualcomm Co-Founder, that is awarded to approximately 10 engineering students per year based on academic and leadership qualities at UCSD 
-\iffalse
-\begin{rSubsection}{}{Regent Scholar}{}{}{}
-\item A prestigious UC system-wide scholarship awarded to students for academic excellence
-\end{rSubsection}
-\fi
-\end{rSubsection}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -123,34 +124,72 @@ Software \& Tools & UNIX, Git, pandas, numpy, nltk, Stocker, seaborn, LaTeX, scr
 %\ \itab{Financial \& Managerial Accounting} \tab{}  \tab{Management of Diverse Teams}
 \end{rSection}
 \fi
-%--------------------------------------
+%----------------------------------------------------------------------------------------
+%-----------PROJECT SECTION----------------
+%----------------------------------------------------------------------------------------
 
 
 \begin{rSection}{\faDatabase{ }}{Projects} 
 
-\begin{rSubsection}{}{3Stock -- Financial Analysis for Personal Portfolio}{Ongoing}{}{}
-\item Uses pandas and numpy Python libraries to analyze stocks by pulling market data from Quandl's API to make decisions for options trading
+\begin{rSubsection}{}{Black Rose}{Present}{}{}
+\item A Slack App to promote horizontal discussion in hierarchical organizations via user anonymity for certain channels
+\item Sole TPM on a team of 9 responsible for driving requirements from conception to delivery
+\item Implemented Agile Scrum Framework using Clubhouse to iterate towards our MVP
+\item Maintained internal and external documentation
+\item Built using node.js and Slack Bolt API
 \end{rSubsection}
-\begin{rSubsection}{}{FireCode Compliant -- Data Analysis }{Ongoing}{}{}
-\item In a team of 6, analyzed data using pandas, numpy, seaborn, and sklearn libraries to better allocate firefighting resources in California
 
+\begin{rSubsection}{}{Social Networks}{Fall 2019}{}{}
+\item Developed a directed graph using IMDB movie data set to solve the Kevin Bacon Social Network Problem
+\item Utilized meson, ninja, and C++ to develop Node, Graph, Disjoint Set, and Edge classes
+\item The program has BFS, DFS, MST, Djikstra's, compress, and union methods
 \end{rSubsection}
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+% Achievement SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\faTrophy{ }}{Achievements} \begin{rSubsection}{}{Jacobs School of Engineering Scholarship}{jss.ucsd.edu}{}{}
+\item A prestigious full-tuition scholarship sponsored by Irwin Jacobs, Qualcomm Co-Founder, that is awarded to approximately 10 UCSD engineering students per year based on academic and leadership qualities
+\iffalse
+\begin{rSubsection}{}{Regent Scholar}{}{}{}
+\item A prestigious UC system-wide scholarship awarded to students for academic excellence
+\end{rSubsection}
+\fi
+\end{rSubsection}
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{\faLaptop{ }}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages &  C/C++, Java, Python, HTML/CSS \\
+Software Methodologies \& Tools & Agile, Scrum, Kanban, XP, SDLC, Jira (JQL), Confluence Macros
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% Professional Dev and Involvement SECTION
+%----------------------------------------------------------------------------------------
 
 
 \begin{rSection}{\faUsers{ }}{Professional Development and Involvement} 
 
 Executive Board Member and Treasurer -- Theta Tau, E$\Delta$ Chapter (Professional Engineering Fraternity)
-\\Board Member -- Jacobs School Scholars' Society 
-\\Board Member and Financial Analyst -- TESC
-\\Committee Member -- UIS, Undergraduate Investment Society
-\\ AVID Peer Tutor for first-generation college-bound juniors
+\\Board Member and Vice President -- Triton Engineering Student Council
+%\\Committee Member -- UIS, Undergraduate Investment Society
+%\\ AVID Peer Tutor for first-generation college-bound juniors
 %\\Member of Scholars Society
-\\ \textbf{Interests: }Game Theory, Poker, Creative writing, interpersonal dynamics, Hiking (CA, CO, HI), UEFA Football
+\\ \textbf{Product Interests: }Financial Literacy, Career Development, Productivity, High-level Product Strategy
+%\\ \textbf{Favorite Product Leaders: }
 \end{rSection}
-% EXTRA STUFF
 
-
-%-------------------------------------------------------------
 
 \end{document}
