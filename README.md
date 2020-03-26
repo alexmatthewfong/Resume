@@ -4,4 +4,4 @@ This repository has a reusable template. To use the template visit [Overleaf](ht
 If you have questions, please contact [Kyle](https://www.linkedin.com/in/kylegillaspy/).
 
 ## Finished Product
-![
+![Kyle's Resume March 2020](https://github.com/kgillasp/Resume/blob/master/Gillaspy_Kyle_Resume_PM2020_4.pdf)
