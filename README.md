@@ -9,4 +9,4 @@ Text to be commented out
 If you have questions, please contact [Kyle](https://www.linkedin.com/in/kylegillaspy/).
 
 ## Finished Product
-![Kyle's Resume March 2020](https://github.com/kgillasp/Resume/blob/master/march2020.PNG)
+![Kyle's Resume June 2020](https://github.com/kgillasp/Resume/blob/master/june142020.PNG)
